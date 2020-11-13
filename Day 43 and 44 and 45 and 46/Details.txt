@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Enter the details created by Nithesh</title>
+
+  </head>
+
+  <body>
+      
+          Name:<br>
+          <input type="text" id="Name"><br>
+          Phone Number:<br>
+          <input type="text" id="Phone_Number"><br>
+          Email Id:<br>
+          <input type="text" id="Email_Id"><br>
+
+          <button onclick="SubmitValues()">Submit</button>
+
+
+          <script type="text/javascript">
+          function SubmitValues(){
+            var Name = document.getElementById("Name").value;
+            var Phone_Number = document.getElementById("Phone_Number").value;
+            var Email_Id = document.getElementById("Email_Id").value;
+            window.external.setResult(Name + "," + Phone_Number + "," + Email_Id);
+            return true;
+          }
+            
+          </script>
+  </body>
+  </html>
